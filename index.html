@@ -9,23 +9,56 @@
 
     <style> 
       
+      * {
+       border: thin red solid;
+      }
+
       body {
         padding-top: 40px;
         padding-bottom: 40px;
-        background-color: #fffffe;
+        background-color: #ffd803;
+
       }
     
+      .items{
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+      }
+
       .name {
-         color: #272343;
+         color: #000000;
+         font-size: 30px;
+         font-family: calibri;
+         display: flex;
+        justify-content: center;
+      }
+
+      .social-icons{
+        display: flex;
+        align-items: center;
+      }
+
+      .professional-icons{
+        display: flex;
+        align-items: center;
       }
 
       .social-icons a {
-        color: #272343;
+        color: #2b11d3;
+        align-items: center;
+        text-align: center;
+        flex-grow: 1;
       }
 
       .professional-icons a {
-        color: #272343;
-        background-color: #f9bc60;
+        color: #fffffe;
+        background-color: #272343;
+        align-items: center;
+        text-align: center;
+        flex-grow: 1;        
       }
       
       .BannerImage{
@@ -33,6 +66,11 @@
         height: 128px;
         object-fit: cover;
         border-radius: 10px;
+      }
+
+      .Banner{
+        display: flex;
+        justify-content: center;
       }
 
       .thumbnail {
@@ -48,68 +86,70 @@
   <body>
     <p>My link in bio</p>
 
+    <div class = "items">
 
-    <div class="banner">
-      <img src="JF-HeadshotBooth.jpg" alt="John Foody headshot" class="BannerImage">
-    </div>
+      <div class="banner">
+        <img src="JF-HeadshotBooth.jpg" alt="John Foody headshot" class="BannerImage">
+      </div>
 
-    <div class="name">
-      John Foody
-    </div>
+      <div class="name">
+        John Foody
+      </div>
 
-    <div class="social-icons">
-      <img
-          src="Linkedin-Logo.png" alt="LinkedIn Logo" class = thumbnail>
+      <div class="social-icons">
+        <img
+            src="Linkedin-Logo.png" alt="LinkedIn Logo" class = thumbnail>
 
-      <a href="https://www.linkedin.com/in/foodyjohn/" target="_blank">
-        LinkedIn
-      </a>
-    </div>
+        <a href="https://www.linkedin.com/in/foodyjohn/" target="_blank">
+          LinkedIn
+        </a>
+      </div>
 
-    <div class="social-icons">
-      <img
-      src="Github-Logo.png" alt="GitHub Logo" class = thumbnail>
-      
-      <a href="https://github.com/jfoody6/" target="_blank">
-        GitHub
-      </a>
+      <div class="social-icons">
+        <img
+        src="Github-Logo.png" alt="GitHub Logo" class = thumbnail>
+        
+        <a href="https://github.com/jfoody6/" target="_blank">
+          GitHub
+        </a>
 
-    </div>
+      </div>
 
-    <div class="social-icons">
-      <img
-      src="Youtube-Logo.png" alt="Youtube Logo" class = thumbnail>
-      
-      <a href="https://www.youtube.com/" target="_blank">
-        YouTube
-      </a>
-    </div>
+      <div class="social-icons">
+        <img
+        src="Youtube-Logo.png" alt="Youtube Logo" class = thumbnail>
+        
+        <a href="https://www.youtube.com/" target="_blank">
+          YouTube
+        </a>
+      </div>
 
-    <div class="social-icons">
-      <img
-      src="GM-Logo.png" alt="General Motors Logo" class = thumbnail>
-      
-      <a href="https://www.GM.com/" target="_blank">
-        General Motors
-      </a>
-    </div>
+      <div class="social-icons">
+        <img
+        src="GM-Logo.png" alt="General Motors Logo" class = thumbnail>
+        
+        <a href="https://www.GM.com/" target="_blank">
+          General Motors
+        </a>
+      </div>
 
-    <div class="professional-icons">
-      <img
-      src="Canvas_Logo.png" alt="Canvas Logo" class = thumbnail>
-      
-      <a href="https://canvas.uchicago.edu/" target="_blank">
-        UChicago Canvas
-      </a>
-    </div>
+      <div class="professional-icons">
+        <img
+        src="Canvas_Logo.png" alt="Canvas Logo" class = thumbnail>
+        
+        <a href="https://canvas.uchicago.edu/" target="_blank">
+          UChicago Canvas
+        </a>
+      </div>
 
-    <div class="professional-icons">
-      <img
-      src="Chicago-Booth-Logo.png" alt="Chicago Booth Logo" class = thumbnail>
-      
-      <a href="https://intranet.chicagobooth.edu/secure/evewkd" target="_blank">
-        Chicago Booth Intranet
-      </a>
+      <div class="professional-icons">
+        <img
+        src="Chicago-Booth-Logo.png" alt="Chicago Booth Logo" class = thumbnail>
+        
+        <a href="https://intranet.chicagobooth.edu/secure/evewkd" target="_blank">
+          Chicago Booth Intranet
+        </a>
+      </div>
     </div>
   </body>
 </html>
